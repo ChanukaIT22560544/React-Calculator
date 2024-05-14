@@ -1,0 +1,72 @@
+/* src/App.css */
+
+.calculator {
+  width: 310px;
+  margin: 20px auto;
+  border: 10px solid #070606;
+  border-radius: 10px;
+  overflow:hidden;
+  box-shadow:  10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(184, 178, 178);
+  
+}
+
+.calculator-screen {
+  box-shadow:inset 5px 5px 5px grey,inset -5px -5px 5px white;
+  width: 270px;
+  height: 55px;
+  font-size: 1.5em;
+  margin-left: 5px;
+  text-align:end;
+  margin-bottom: 10px;
+  margin-top: 1px;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  margin-left: 5px;
+  margin-bottom: 4px;
+  margin-top: 2px;
+  width: 60px;
+  height: 50px;
+  font-size:20px;
+ 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 20px;
+  box-shadow:5px 5px 5px rgb(143, 140, 140), -5px -5px 5px rgb(228, 222, 222);
+  background-color: rgb(185, 176, 176);
+}
+
+button.operator {
+  background-color: #a7f085;
+  
+}
+
+button.del{
+  background-color: #d63c3c;
+}
+
+button.double {
+  grid-column: span 2;
+}
+
+button.tall {
+  grid-row: span 2;
+}
+
+
+
+button:active {
+  box-shadow:inset 5px 5px 5px grey,inset -5px -5px 5px white;
+}
